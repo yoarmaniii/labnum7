@@ -13,13 +13,14 @@ public class labnum7 {
 		String choice;
 		
 		//Welcome Screen question
+		System.out.println("Welcome!");
 		
 		//Get userinput		
 		//Start switch here
 		//insert a While loop 
 		while(userCont.equals("yes"))	
 		{	
-			System.out.println("Welcome! Which Student would you like to learn more about?"+ "(Enter a number between 1-5)");
+			System.out.println("Which student would you like to learn more about?"+ "(Enter a number between 1-5)");
 
 			input = userInput.nextInt();
 			switch (input){
@@ -49,13 +50,106 @@ public class labnum7 {
 			}
 				
 					break;
-			}//s
+		case 2 :
+			choice =userInput.nextLine();
+			System.out.println("This student is Jeseekia! " + "Would you like to know where Jeseekia is from? (enter Yes or No)");
+				choice = userInput.nextLine();
+		
+				//user Input is yes
+			if(choice.equalsIgnoreCase("yes")){
+					System.out.println("Jessekia is from Detroit, MI! Would you like to know more? Enter - Yes/No?");
+					choice = userInput.nextLine();
+					
+					if(choice.equalsIgnoreCase("yes")){
+						System.out.println("Jeseekia favorite food is lasagna!");
+						System.out.println("Continue with another student? Enter Yes/No");
+						userCont = userInput.nextLine();
+					}
+					//user Input is no
+			else if (choice.equalsIgnoreCase("no")){
+						System.out.println("Continue with another student?" + "Yes/No");
+						userCont = userInput.nextLine();
+						}//End of Else if statement
 			
-
-		}//w
+					
+		}//End of if statement
+			break;
+			
+		case 3 :
+			choice =userInput.nextLine();
+			System.out.println("This student is Escoe! " + "Would you like to know where Escoe is from? (enter Yes or No)");
+				choice = userInput.nextLine();
+		
+				//user Input is yes
+			if(choice.equalsIgnoreCase("yes")){
+					System.out.println("Escoe is from Detroit, MI! Would you like to know more? Enter - Yes/No?");
+					choice = userInput.nextLine();
+					
+					if(choice.equalsIgnoreCase("yes")){
+						System.out.println("Escoe favorite food is Shrimp!");
+						System.out.println("Continue with another student? Enter Yes/No");
+						userCont = userInput.nextLine();
+					}
+					//user Input is no
+			else if (choice.equalsIgnoreCase("no")){
+						System.out.println("Continue with another student?" + "Yes/No");
+						userCont = userInput.nextLine();
+						}//End of Else if statement
+			
+					
+		}//End of if statement
+			break;
+		
+		case 4 :
+			choice =userInput.nextLine();
+			System.out.println("This student is Clark! " + "Would you like to know where Clark is from? (enter Yes or No)");
+				choice = userInput.nextLine();
+		
+				//user Input is yes
+			if(choice.equalsIgnoreCase("yes")){
+					System.out.println("Clark is from Detroit, MI! Would you like to know more? Enter - Yes/No?");
+					choice = userInput.nextLine();
+					
+					if(choice.equalsIgnoreCase("yes")){
+						System.out.println("Clark favorite food is pizza!");
+						System.out.println("Continue with another student? Enter Yes/No");
+						userCont = userInput.nextLine();
+					}
+					//user Input is no
+			else if (choice.equalsIgnoreCase("no")){
+						System.out.println("Continue with another student?" + "Yes/No");
+						userCont = userInput.nextLine();
+						}//End of Else if statement
+			
+		}//End of if Statements	
+			break;
+		case 5 :
+			choice =userInput.nextLine();
+			System.out.println("This student is Tyler! " + "Would you like to know where Tyler is from? (enter Yes or No)");
+				choice = userInput.nextLine();
+		
+				//user Input is yes
+			if(choice.equalsIgnoreCase("yes")){
+					System.out.println("Tyler is from Monroe, MI! Would you like to know more? Enter - Yes/No?");
+					choice = userInput.nextLine();
+					
+					if(choice.equalsIgnoreCase("yes")){
+						System.out.println("Tyler favorite food is pizza!");
+						System.out.println("Continue with another student? Enter Yes/No");
+						userCont = userInput.nextLine();
+					}
+					//user Input is no
+			else if (choice.equalsIgnoreCase("no")){
+						System.out.println("Continue with another student?" + "Yes/No");
+						userCont = userInput.nextLine();
+						}//End of Else if statement
+			
+		}//End of if Statements	
+			break;	
+		}//End of Switch statements
+		}//End of While Loop	
 		System.out.println("goodbye");
-		}
 
-	
-	}
+		}//End of Main
+		}//End of ClassBody
 	
