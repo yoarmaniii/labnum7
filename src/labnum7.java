@@ -12,30 +12,41 @@ public class labnum7 {
 		System.out.println("Welcome! Which Student would you like to learn more about? (Enter a number between 1-5)");
 		
 		//Get userinput
-		input = userInput.nextInt();		
-		//Start switch somewhere
+		input = userInput.nextInt();	
+		
+		//Start switch here
 		switch (input){
 		case 1 :
 			choice =userInput.nextLine();
 			System.out.println("This student is Armani! " + "Would you like to know about Armani? (enter Hometown or Favorite food)");
 				choice = userInput.nextLine();
+				
+				//userinput of choices for hometown or favorite food
 			if(choice.equalsIgnoreCase("hometown")){
 					System.out.println("Armani is from Detroit, MI! Would you like to know more or nah? Enter - Yes/No?");
-					choice = userInput.nextLine();
+					choice = userInput.nextLine();}
+			
+					else if(choice.equalsIgnoreCase("Favorite Food")){
+						System.out.println(" Armani's favorite food is Salmon! YUMMMYYY!!!" + "Would you like to know more about Armani?");
+						choice = userInput.nextLine();
+						}
 
 						if(choice.equalsIgnoreCase("yes")){
 							System.out.println( "Enter Hometown or Favorite food");
-							choice = userInput.nextLine();}
+							choice = userInput.nextLine();
+							}
+						
 
 						
 						else {
 							if(choice.equalsIgnoreCase("no"))
-							System.out.println("Do you want to continue with another?");
+							System.out.println("Do you want to continue with another student?");
 							choice = userInput.nextLine();
 						}
-							break;
+							
 						}
+		
+	
 		}
-	}
-
 }
+
