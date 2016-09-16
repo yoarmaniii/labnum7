@@ -17,15 +17,22 @@ public class labnum7 {
 		switch (input){
 		case 1 :
 			choice =userInput.nextLine();
-			System.out.println("This student is Armani " + "Would you like to know about Armani? (enter Hometown or Favorite food");
-				if(choice.equals("hometown")){
-					System.out.println("Armani is from Detroit, MI! Would you like to know more or nah? Yes/No?");
-					}
+			System.out.println("This student is Armani! " + "Would you like to know about Armani? (enter Hometown or Favorite food)");
+				choice = userInput.nextLine();
+			if(choice.equalsIgnoreCase("hometown")){
+					System.out.println("Armani is from Detroit, MI! Would you like to know more or nah? Enter - Yes/No?");
+					choice = userInput.nextLine();
+
 						if(choice.equalsIgnoreCase("yes")){
 							System.out.println( "Enter Hometown or Favorite food");
-						}
+							choice = userInput.nextLine();}
+
+						
 						else {
+							if(choice.equalsIgnoreCase("no"))
 							System.out.println("Do you want to continue with another?");
+							choice = userInput.nextLine();
+						}
 							break;
 						}
 		}
