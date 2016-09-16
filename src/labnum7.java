@@ -21,8 +21,8 @@ public class labnum7 {
 		//insert a While loop 
 		while(userCont.equals("yes"))	
 		{	
-			System.out.println("Which student would you like to learn more about?"+ "(Enter a number between 1-5)");
-			
+			System.out.println("Which student would you like to learn more about?"+ "(Enter (1) for Armani, (2) for Jeseekia, (3) for Escoe"); 
+			System.out.println("(4) for Clark, or (5) for Tyler!");
 			//Input Exception statement
 			
 			
@@ -31,7 +31,7 @@ public class labnum7 {
 			input = userInput.nextInt();
 				}
 			catch(InputMismatchException e){
-				System.out.println("Thats an invalid prompt, please enter a valid answer! Continue? Yes/No?");
+				System.out.println("Thats an invalid prompt, please enter a valid answer! Try Again? Enter- Yes/No");
 				userInput.nextLine();
 				userCont =userInput.nextLine();	
 
@@ -43,7 +43,7 @@ public class labnum7 {
 			switch (input){
 		case 1 :
 			choice =userInput.nextLine();
-			System.out.println("This student is Armani! " + "What would you like to know where Armani is from? (enter Yes or No)");
+			System.out.println("This student is Armani! " + "Would you like to know where Armani is from? (enter Yes or No)");
 				userCont = userInput.nextLine();
 		
 				//user Input is yes
